@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/* navbar */
+.nav-item .nav-link {
+    font-size: 18;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* button */
+.btn-outline-danger {
+    background-color: transparent;
+    border-radius: 10px;
+    border-color: red;
+    padding: 10px 45px;
+    color: red;
+}
+
+/* hero */
+#hero {
+    background-image: url("../img/kelas.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+}
+
+.hero-title {
+    padding-top: 200px;
+}
+
+.hero-text {
+    font-size: 65px;
+    font-weight: 600;
+}
