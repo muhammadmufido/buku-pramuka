@@ -13,27 +13,23 @@
 
 <body>
     {{-- navbar --}}
-    <nav class="navbar navbar-expand-lg navbar-black  fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-black  fixed-top" style="border-bottom: solid 1px black">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="{{ asset('assets/logo/logo.ico') }}" height="30"
-                    width="30" alt=""></a>
-            <a class="navbar-brand" href="#"><img src="{{ asset('assets/logo/ungu.png') }}" height="30"
-                    width="30" alt=""></a>
-            <a class="navbar-brand" href="#"><img src="{{ asset('assets/logo/coklat.png') }}" height="30"
                     width="30" alt=""></a>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#hero">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Kategori</a>
+                        <a class="nav-link active" aria-current="page" href="#kategori">Kategori</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Kegiatan</a>
+                        <a class="nav-link active" aria-current="page" href="#foto">Kegiatan</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Sosmed</a>
+                        <a class="nav-link active" aria-current="page" href="#footer">Sosmed</a>
                     </li>
 
             </div>
@@ -64,11 +60,12 @@
                 <h2 class="fw-bold">Kategori</h2>
             </div>
 
-            <div class="row py-5">
-                <div class="col-lg-4">
-                    <div class="card border-0">
-                        <img src="{{ asset('assets/img/kelas.jpg') }}" class="img-fluid mb-3" alt="">
-                        <div class="konten-berita">
+            <div class="row py-5 ">
+                <div class="col-lg-4 mb-5">
+                    <div class="card border-0 p-3 " style="background-color: #E3C2A5">
+                        <img src="{{ asset('assets/img/kelas.jpg') }}" class="img-fluid mb-3 rounded shadow-lg"
+                            alt="">
+                        <div class="konten-berita ">
                             <p class="mb-3ctext-secondary">06/05/2024</p>
                             <h4 class="fw-bold mb-3">Cara membuat dragbar</h4>
                             <p class="text-secondary">#pramukahebat</p>
@@ -77,9 +74,10 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card border-0">
-                        <img src="{{ asset('assets/img/kelas.jpg') }}" class="img-fluid mb-3" alt="">
-                        <div class="konten-berita">
+                    <div class="card border-0 p-3 " style="background-color: #E3C2A5">
+                        <img src="{{ asset('assets/img/kelas.jpg') }}" class="img-fluid mb-3 rounded shadow-lg"
+                            alt="">
+                        <div class="konten-berita ">
                             <p class="mb-3ctext-secondary">06/05/2024</p>
                             <h4 class="fw-bold mb-3">Cara membuat dragbar</h4>
                             <p class="text-secondary">#pramukahebat</p>
@@ -88,22 +86,10 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card border-0">
-                        <img src="{{ asset('assets/img/kelas.jpg') }}" class="img-fluid mb-3" alt="">
-                        <div class="konten-berita">
-                            <p class="mb-3ctext-secondary">06/05/2024</p>
-                            <h4 class="fw-bold mb-3">Cara membuat dragbar</h4>
-                            <p class="text-secondary">#pramukahebat</p>
-                            <a href="" class="text-decoration-none text-danger">Selengkapnya</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row py-5">
-                <div class="col-lg-4">
-                    <div class="card border-0">
-                        <img src="{{ asset('assets/img/kelas.jpg') }}" class="img-fluid mb-3" alt="">
-                        <div class="konten-berita">
+                    <div class="card border-0 p-3 " style="background-color: #E3C2A5">
+                        <img src="{{ asset('assets/img/kelas.jpg') }}" class="img-fluid mb-3 rounded shadow-lg"
+                            alt="">
+                        <div class="konten-berita ">
                             <p class="mb-3ctext-secondary">06/05/2024</p>
                             <h4 class="fw-bold mb-3">Cara membuat dragbar</h4>
                             <p class="text-secondary">#pramukahebat</p>
@@ -112,9 +98,10 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card border-0">
-                        <img src="{{ asset('assets/img/kelas.jpg') }}" class="img-fluid mb-3" alt="">
-                        <div class="konten-berita">
+                    <div class="card border-0 p-3 " style="background-color: #E3C2A5">
+                        <img src="{{ asset('assets/img/kelas.jpg') }}" class="img-fluid mb-3 rounded shadow-lg"
+                            alt="">
+                        <div class="konten-berita ">
                             <p class="mb-3ctext-secondary">06/05/2024</p>
                             <h4 class="fw-bold mb-3">Cara membuat dragbar</h4>
                             <p class="text-secondary">#pramukahebat</p>
@@ -123,9 +110,10 @@
                     </div>
                 </div>
                 <div class="col-lg-4">
-                    <div class="card border-0">
-                        <img src="{{ asset('assets/img/kelas.jpg') }}" class="img-fluid mb-3" alt="">
-                        <div class="konten-berita">
+                    <div class="card border-0 p-3 " style="background-color: #E3C2A5">
+                        <img src="{{ asset('assets/img/kelas.jpg') }}" class="img-fluid mb-3 rounded shadow-lg"
+                            alt="">
+                        <div class="konten-berita ">
                             <p class="mb-3ctext-secondary">06/05/2024</p>
                             <h4 class="fw-bold mb-3">Cara membuat dragbar</h4>
                             <p class="text-secondary">#pramukahebat</p>
@@ -133,6 +121,19 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-lg-4">
+                    <div class="card border-0 p-3 " style="background-color: #E3C2A5">
+                        <img src="{{ asset('assets/img/kelas.jpg') }}" class="img-fluid mb-3 rounded shadow-lg"
+                            alt="">
+                        <div class="konten-berita ">
+                            <p class="mb-3ctext-secondary">06/05/2024</p>
+                            <h4 class="fw-bold mb-3">Cara membuat dragbar</h4>
+                            <p class="text-secondary">#pramukahebat</p>
+                            <a href="" class="text-decoration-none text-danger">Selengkapnya</a>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <div class="footer-kategori text-center">
@@ -183,7 +184,7 @@
     {{-- vidio end --}}
 
     {{-- Kegiatan star --}}
-    <section id="foto" class="section-foto parallax">
+    <section id="foto" class="section-foto parallax mb-5">
         <div class="container py-5">
             <h3 class="fw-bold">Kegiatan Terbaru</h3>
         </div>
@@ -205,19 +206,79 @@
 
 
     {{-- footer --}}
-    <section id="footer" class="bg-white">
-        <div class="container py-4">
+    <section id="footer" class="bg-brown item-align-center">
+        <div class="py-4 px-4 justify-content-between" style="background-color: #E3C2A5">
             <footer>
-                <div class="row">
-                    <div class="col-12 col-md-3 md-3">
+                <div class="row d-flex justify-content-between">
+
+                    {{-- 1.0 --}}
+                    <div class="col-12 col-md-3 md-3 ">
+                        <div class="d-flex mb-3">
+                            <img src="{{ asset('assets/logo/smk (1).png') }}" height="45" width="45"
+                                alt="">
+                            <p class="fw-bold mt-2 me-2">Pramuka Eskasaba</p class="fw-bold mt-2 me-2">
+                        </div>
+
+                        <div>
+                            <p>2024 © SMK NEGERI 1 BANGSRI</p>
+                            <p>All rights reserved.</p>
+                        </div>
+                    </div>
+                    {{-- 1.0 --}}
+
+                    {{-- star 1 --}}
+                    <div class="col-12 col-md-2 md-2">
                         <h5 class="fw-bold mb-3">Navigasi</h5>
-                        <div class="d-flex">
-                            <ul class="nav flex-column me-5">
-                                <li class="nav-item mb-2"><a href="#Kategori"
-                                        class="nav-link p-0 text-muted">kategori</a></li>
+                        <div class="">
+                            <ul class="nav flex-column">
+                                <li class="nav-item mb-2 "><a href="#hero" class="nav-link p-0 text-muted">Home</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#kategori"
+                                        class="nav-link p-0 text-muted">Kategori</a>
+                                </li>
+                                <li class="nav-item mb-2"><a href="#foto"
+                                        class="nav-link p-0 text-muted">Kegiatan</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
+                    {{-- end 1 --}}
+
+                    {{-- 2.0 --}}
+                    <div class="col-12 col-md-3 md-3 text-center">
+                        <h5 class="fw-bold mb-3">Ambalan</h5>
+                        <div class="">KH.ACHMAD FAUZAN <br> & <br> DEWI SARTIKA</div>
+                        <img src="{{ asset('assets/logo/fauzan.png') }}" width="30" height="30"
+                            alt="">
+                        <img src="{{ asset('assets/logo/kartika.png') }}" width="30" height="30"
+                            alt="">
+                    </div>
+                    {{-- 2.0 --}}
+
+                    {{-- kolom2 --}}
+                    <div class="col-12 col-md-2 md-2">
+                        <h5 class="fw-bold mb-3">Medsos</h5>
+                        <div class="d-flex mb-3">
+                            <a href="" target="_blank" class="text-decoration-none text-dark ">
+                                <img src="{{ asset('assets/logo/instagram (1).svg') }}" height="30"
+                                    width="30" class="me-4" alt="">
+                            </a>
+                            <a href="" target="_blank" class="text-decoration-none text-dark ">
+                                <img src="{{ asset('assets/logo/facebook (1).svg') }}" height="30" width="30"
+                                    class="me-4" alt="">
+                            </a>
+                            <a href="" target="_blank" class="text-decoration-none text-dark ">
+                                <img src="{{ asset('assets/logo/tiktok.svg') }}" height="30" width="30"
+                                    class="me-4" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    {{-- end 2 --}}
+
+                    {{-- star 3 --}}
+
+                    {{-- end 3 --}}
+
                 </div>
             </footer>
         </div>
