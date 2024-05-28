@@ -5,6 +5,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\dashboardController;
 use App\Http\Controllers\PhotoController;
+use App\Http\Controllers\VideoController;
 use GuzzleHttp\Middleware;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
@@ -46,3 +47,10 @@ Route::get('/photo', [photoController::class, 'index'])->name('photo')-> middlew
 Route::post('/photo/store', [photoController::class, 'store'])->name('photo.store')-> middleware('auth');
 Route::post('/photo/update/{id}', [photoController::class, 'update'])->name('photo.update')-> middleware('auth');
 Route::post('/photo/destroy/{id}', [PhotoController::class, 'destroy'])->name('photo.destroy')-> middleware('auth');
+
+
+
+Route::get('/video', [VideoController::class, 'index'])->name('video')-> middleware('auth');
+Route::post('/video/store', [VideoController::class, 'store'])->name('video.store')-> middleware('auth');
+Route::post('/video/update/{id}', [VideoController::class, 'update'])->name('video.update')-> middleware('auth');
+Route::post('/video/destroy/{id}', [VideoController::class, 'destroy'])->name('video.destroy')-> middleware('auth');

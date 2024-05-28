@@ -53,29 +53,15 @@
                 <h2 class="fw-bold">Kategori</h2>
             </div>
 
-            <div class="row gap-5  py-5">
+            <div class="row justify-content-center gap-5 py-5">
                 @foreach ($artikels as $item)
-                    <div class="card " style="width: 20rem; background-color: #E3C2A5">
-                        <img src="{{ asset('storage/artikel/' . $item->img) }}" class="card-img-top" alt="...">
+                    <div class="card pt-3 " style="width: 20rem; background-color: #E3C2A5">
+                        <img src="{{ asset('storage/artikel/' . $item->img) }}" class="  rounded shadow-lg" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">{{ $item->judul }}</h5>
-                            <a href="/detail/{{ $item->slug }}" class="btn btn-primary">Go somewhere</a>
+                            <a href="/detail/{{ $item->slug }}" class="btn btn-dark">Selengkapnya</a>
                         </div>
                     </div>
-                    {{-- <div class="col-lg-4 mb-5">
-                        <div class="card border-0 p-3 " style="background-color: #E3C2A5">
-                            <img src="{{ asset('storage/artikel/' . $item->img) }}" class="img-fluid mb-3 rounded shadow-lg"
-                                alt="">
-                            <div class="konten-berita ">
-                                <p class="mb-3ctext-secondary">{{ $item->create_at }}</p>
-                                <h4 class="fw-bold mb-3">{{ $item->judul }}</h4>
-                                <button class="text-white bg-black mt-2 rounded " style="border: none; "><a
-                                        href="/detail/{{ $item->slug }}" class="text-white"
-                                        style="text-decoration:none; border:none; ">Selengkapnya ></button>
-
-                            </div>
-                        </div>
-                    </div> --}}
                 @endforeach
             </div>
 
@@ -94,33 +80,16 @@
             </div>
 
             <div class="row py-5">
-                <div class="col-lg-4">
-                    <iframe width="100%" height="215"
-                        src="https://www.youtube.com/embed/vJlWFwX3LJc?si=6SfPTxg9mva6LvBc" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
+                @foreach ($videos as $item)
+                    <div class="col-lg-4">
+                        <iframe width="100%" height="215" src="https://www.youtube.com/embed/{{ $item->youtube_code }}"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <h1 style="font-size: 16px">{{ $item->judul }}</h1>
+                    </div>
+                @endforeach
 
-                <div class="col-lg-4">
-                    <iframe width="100%" height="215"
-                        src="https://www.youtube.com/embed/vJlWFwX3LJc?si=6SfPTxg9mva6LvBc" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-
-                <div class="col-lg-4">
-                    <iframe width="100%" height="215"
-                        src="https://www.youtube.com/embed/vJlWFwX3LJc?si=6SfPTxg9mva6LvBc" title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-
-            <div class="footer-kategori text-center">
-                <a href="" class="btn btn-outline-black" style="border: 1px solid black">Tutorial Lainnya</a>
             </div>
         </div>
     </section>

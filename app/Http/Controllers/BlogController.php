@@ -30,8 +30,8 @@ class BlogController extends Controller
     {
         $rules = [
             'judul' => 'required',
-            'image' => 'required|max:1000|mimes:jpg,jpeg,png,webp',
-            'desc' => 'required|min:20',
+            'image' => 'required|max:10000|mimes:jpg,jpeg,png,webp',
+            'desc' => 'required',
         ];
 
         $messages = [
