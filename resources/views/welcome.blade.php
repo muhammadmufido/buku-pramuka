@@ -7,6 +7,7 @@
             <div class="hero-title">
                 <div class="hero-text">Selamat Datang Di <br> Website ScooutBook</div>
                 <p>Web ini berisikan beberapa tata cara melakukan sesauatu seperti upacara dll.</p>
+                <p>“Sinau online,Tetep Gagah lan Trengginas”</p>
             </div>
         </div>
     </section>
@@ -82,10 +83,17 @@
             <div class="row py-5">
                 @foreach ($videos as $item)
                     <div class="col-lg-4">
-                        <iframe width="100%" height="215" src="https://www.youtube.com/embed/{{ $item->youtube_code }}"
+                        <iframe width="100%" height="215"
+                            src="https://www.youtube.com/embed/{{ $item->youtube_code }}?autoplay=1&=1"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+                        {{-- option 2 --}}
+                        {{-- <a href="https://www.youtube.com/embed/{{ $item->youtube_code }}?autoplay=1&=1">
+                                <img class="img-fluid mb-3" style="border-radius: 13px" src="http://img.youtube.com/vi/{{ $item->youtube_code }}/maxresdefault.jpg" alt="">
+                            </a> --}}
+                        {{-- option 2 end --}}
                         <h1 style="font-size: 16px">{{ $item->judul }}</h1>
                     </div>
                 @endforeach

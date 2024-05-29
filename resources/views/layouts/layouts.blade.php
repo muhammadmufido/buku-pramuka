@@ -80,16 +80,14 @@
                     <div class="col-12 col-md-2 md-2">
                         <h5 class="fw-bold mb-3">Medsos</h5>
                         <div class="d-flex mb-3">
-                            <a href="" target="_blank" class="text-decoration-none text-dark ">
+                            <a href="https://www.instagram.com/pramuka_smksaba/" target="_blank"
+                                class="text-decoration-none text-dark ">
                                 <img src="{{ asset('assets/logo/instagram (1).svg') }}" height="30" width="30"
                                     class="me-4" alt="">
                             </a>
-                            <a href="" target="_blank" class="text-decoration-none text-dark ">
-                                <img src="{{ asset('assets/logo/facebook (1).svg') }}" height="30" width="30"
-                                    class="me-4" alt="">
-                            </a>
-                            <a href="" target="_blank" class="text-decoration-none text-dark ">
-                                <img src="{{ asset('assets/logo/tiktok.svg') }}" height="30" width="30"
+                            <a href="https://www.youtube.com/@scouteskasaba6141" target="_blank"
+                                class="text-decoration-none text-dark ">
+                                <img src="{{ asset('assets/img/youtube.png') }}" height="30" width="30"
                                     class="me-4" alt="">
                             </a>
                         </div>
